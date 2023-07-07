@@ -123,6 +123,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "arrow-array"
+version = "41.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6049e031521c4e7789b7530ea5991112c0a375430094191f3b74bdf37517c9a9"
+dependencies = [
+ "ahash",
+ "arrow-buffer 41.0.0",
+ "arrow-data 41.0.0",
+ "arrow-schema 41.0.0",
+ "chrono",
+ "half 2.2.1",
+ "hashbrown 0.13.2",
+ "num",
+]
+
+[[package]]
 name = "arrow-buffer"
 version = "35.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -167,6 +183,16 @@ name = "arrow-buffer"
 version = "39.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9405b78106a9d767c7b97c78a70ee1b23ee51a74f5188a821a716d9a85d1af2b"
+dependencies = [
+ "half 2.2.1",
+ "num",
+]
+
+[[package]]
+name = "arrow-buffer"
+version = "41.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a83450b94b9fe018b65ba268415aaab78757636f68b7f37b6bc1f2a3888af0a0"
 dependencies = [
  "half 2.2.1",
  "num",
@@ -249,6 +275,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "arrow-data"
+version = "41.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4d48dcbed83d741d4af712af17f6d952972b8f6491b24ee2415243a7e37c6438"
+dependencies = [
+ "arrow-buffer 41.0.0",
+ "arrow-schema 41.0.0",
+ "half 2.2.1",
+ "num",
+]
+
+[[package]]
 name = "arrow-format"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -319,6 +357,15 @@ name = "arrow-schema"
 version = "39.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "18c41d058b2895a12f46dfafc306ee3529ad9660406be0ab8a7967d5e27c417e"
+dependencies = [
+ "bitflags 2.2.1",
+]
+
+[[package]]
+name = "arrow-schema"
+version = "41.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2b71d8d68d0bc2e648e4e395896dc518be8b90c5f0f763c59083187c3d46184b"
 dependencies = [
  "bitflags 2.2.1",
 ]
@@ -1315,22 +1362,26 @@ dependencies = [
  "arrow-array 37.0.0",
  "arrow-array 38.0.0",
  "arrow-array 39.0.0",
+ "arrow-array 41.0.0",
  "arrow-buffer 35.0.0",
  "arrow-buffer 36.0.0",
  "arrow-buffer 37.0.0",
  "arrow-buffer 38.0.0",
  "arrow-buffer 39.0.0",
+ "arrow-buffer 41.0.0",
  "arrow-data 35.0.0",
  "arrow-data 36.0.0",
  "arrow-data 37.0.0",
  "arrow-data 38.0.0",
  "arrow-data 39.0.0",
+ "arrow-data 41.0.0",
  "arrow-json",
  "arrow-schema 35.0.0",
  "arrow-schema 36.0.0",
  "arrow-schema 37.0.0",
  "arrow-schema 38.0.0",
  "arrow-schema 39.0.0",
+ "arrow-schema 41.0.0",
  "arrow2 0.16.0",
  "arrow2 0.17.0",
  "arrow2_convert",

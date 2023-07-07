@@ -22,6 +22,7 @@ features = ["arrow2-0-17", "arrow-39"]
 [features]
 default = []
 
+arrow-41 = ["dep:arrow-array-41", "dep:arrow-schema-41", "dep:arrow-data-41", "dep:arrow-buffer-41"]
 arrow-39 = ["dep:arrow-array-39", "dep:arrow-schema-39", "dep:arrow-data-39", "dep:arrow-buffer-39"]
 arrow-38 = ["dep:arrow-array-38", "dep:arrow-schema-38", "dep:arrow-data-38", "dep:arrow-buffer-38"]
 arrow-37 = ["dep:arrow-array-37", "dep:arrow-schema-37", "dep:arrow-data-37", "dep:arrow-buffer-37"]
@@ -29,6 +30,12 @@ arrow-36 = ["dep:arrow-array-36", "dep:arrow-schema-36", "dep:arrow-data-36", "d
 arrow-35 = ["dep:arrow-array-35", "dep:arrow-schema-35", "dep:arrow-data-35", "dep:arrow-buffer-35"]
 
 [dependencies]
+arrow-array-41 = { package = "arrow-array", version = "41", optional = true }
+arrow-buffer-41 = { package = "arrow-buffer", version = "41", optional = true }
+arrow-data-41 = { package = "arrow-data", version="41", optional = true, features = ["ffi"] }
+arrow-schema-41 = { package = "arrow-schema", version = "41", optional = true }
+
+
 arrow-array-39 = { package = "arrow-array", version = "39", optional = true }
 arrow-buffer-39 = { package = "arrow-buffer", version = "39", optional = true }
 arrow-data-39 = { package = "arrow-data", version="39", optional = true, features = ["ffi"] }
