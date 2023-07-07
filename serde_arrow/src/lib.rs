@@ -188,6 +188,15 @@ pub mod _impl {
             }
         };
     }
+    #[cfg(feature = "arrow-41")]
+    build_arrow_crate!(
+        arrow_array_41,
+        arrow_buffer_41,
+        arrow_data_41,
+        arrow_schema_41
+    );
+
+
 
     #[cfg(feature = "arrow-39")]
     build_arrow_crate!(
