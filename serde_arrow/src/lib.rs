@@ -272,6 +272,7 @@ pub mod arrow2;
     feature = "arrow-37",
     feature = "arrow-38",
     feature = "arrow-39",
+    feature = "arrow-41",
 ))]
 pub mod arrow;
 
@@ -283,6 +284,7 @@ pub mod arrow;
         feature = "arrow-37",
         feature = "arrow-38",
         feature = "arrow-39",
+        feature = "arrow-41",
     ),
     any(feature = "arrow2-0-17", feature = "arrow2-0-16")
 ))]
